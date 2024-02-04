@@ -1,0 +1,45 @@
+/* Header.css */
+
+/* Initial styles for the collapsed state */
+.navbar-collapse {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Styles for the expanded state */
+.navbar-collapse.open {
+  display: block;
+  opacity: 1;
+}
+
+/* Your navigation item styles */
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+/* Transition styles for enter */
+.navbar-collapse-enter {
+  opacity: 0;
+}
+
+.navbar-collapse-enter-active {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Transition styles for exit */
+.navbar-collapse-exit {
+  opacity: 1;
+}
+
+.navbar-collapse-exit-active {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
